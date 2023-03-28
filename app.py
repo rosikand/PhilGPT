@@ -50,6 +50,8 @@ option = st.sidebar.selectbox(
     'Which Philosopher would you like to talk to?',
     ('Plato', 'Nietzsche', 'Kant', 'gpt'))
 st.sidebar.write('You selected:', option)
+st.sidebar.write("[Source code](https://github.com/rosikand/PhilGPT-Deployed)")
+
 
 
 chapter_embeddings = load_embeddings(option)
@@ -63,5 +65,4 @@ if st.button(f"Ask {option}"):
         time.sleep(1)
         response = process_input(query, chapter_embeddings, option, open_ai_api_key, temp_)
         st.write("**Answer**:", response)
-
 
