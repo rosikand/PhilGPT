@@ -50,7 +50,7 @@ option = st.sidebar.selectbox(
     'Which Philosopher would you like to talk to?',
     ('Plato', 'Nietzsche', 'Kant', 'gpt'))
 st.sidebar.write('You selected:', option)
-st.sidebar.write("[Source code](https://github.com/rosikand/PhilGPT-Deployed)")
+st.sidebar.write("[Source code](https://github.com/rosikand/PhilGPT)")
 
 
 
