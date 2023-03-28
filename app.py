@@ -12,7 +12,7 @@ import pickle
 
 
 
-@st.cache_data
+# @st.cache_data
 def load_embeddings(philosopher_name):
     """
     Loads in chapter embeddings. 
